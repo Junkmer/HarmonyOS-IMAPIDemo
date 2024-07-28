@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Junker\\.ohos\\config\\default_IMAPIDemo_k8zD92TzVb4zLN0YYxOocycWawKYCpW6-vyAHomv06Y=.cer",
+          "storePassword": "0000001A2581885C4CE74FF18095EFA4435F923E877FA6413C50275298DD23E1B2D53F645982E485EFD2",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001AE8AFA169BC3ACCF341954F7968761607F52664B45DF6FAB4430B81C17350525E659D9621F72B",
+          "profile": "C:\\Users\\Junker\\.ohos\\config\\default_IMAPIDemo_k8zD92TzVb4zLN0YYxOocycWawKYCpW6-vyAHomv06Y=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Junker\\.ohos\\config\\default_IMAPIDemo_k8zD92TzVb4zLN0YYxOocycWawKYCpW6-vyAHomv06Y=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
